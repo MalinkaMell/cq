@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coding Quiz Challenge</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link rel="shortcut icon" href="#" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+
+	<body>
+		<nav>
+			<div class="navbar navbar-nav navbar-light bg-light">
+				<div class="d-flex justify-content-between w-100 px-5 py-3">
+					<a href="highscores.html" class="h5">View Highscores</a>
+					<h5 id="timer"></h5>
+				</div>
+			</div>
+		</nav>
+		<section id="intro" class="text-center mt-5 d-block">
+			<h3 class="mb-5">Coding Quiz Challenge</h3>
+			<div class="intro-text-container">
+				<p class="intro-text mb-5">
+					Try to answer the following code-related questions within the time
+					limit.<br />
+					Keep in mind that incorrect answers will penalize your score/time by
+					ten seconds!
+				</p>
+			</div>
+
+			<button type="button" id="start">
+				Start quiz
+			</button>
+		</section>
+		<section id="game" class="text-center mt-5 d-none">
+			<h3 id="question">question</h3>
+			<div id="answers"></div>
+			<hr />
+			<h3 id="answer" class="font-italic"></h3>
+		</section>
+		<section id="end-game" class="text-center mt-5 d-none">
+			<h3 id="end-message"></h3>
+			<div id="end-score"></div>
+			<hr />
+			<h3 id="end-answers" class="font-italic"></h3>
+			<hr />
+			<h3>Save highscore</h3>
+			<div class="form-group">
+				<label for="initials">Initials</label>
+				<input class="form-control w-25 mx-auto" type="text" id="initials" />
+				<button class="btn btn-primary my-3" id="submit" type="button">
+					Submit
+				</button>
+				<button class="btn btn-primary my-3" id="again" type="button">
+					Play Again
+				</button>
+			</div>
+		</section>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
